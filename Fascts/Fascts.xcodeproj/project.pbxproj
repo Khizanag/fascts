@@ -17,6 +17,12 @@
 		FB24F08B28D0A75E00EC6B66 /* FasctsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB24F08A28D0A75E00EC6B66 /* FasctsUITests.swift */; };
 		FB24F08D28D0A75E00EC6B66 /* FasctsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB24F08C28D0A75E00EC6B66 /* FasctsUITestsLaunchTests.swift */; };
 		FB24F09C28D0A80500EC6B66 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB24F09B28D0A80500EC6B66 /* HomeView.swift */; };
+		FB24F09F28D0AABB00EC6B66 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = FB24F09E28D0AABB00EC6B66 /* SwiftUIPager */; };
+		FB24F0A228D0AB4200EC6B66 /* Fasct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB24F0A128D0AB4200EC6B66 /* Fasct.swift */; };
+		FB24F0A428D0AC5600EC6B66 /* Fasct+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB24F0A328D0AC5600EC6B66 /* Fasct+Examples.swift */; };
+		FB24F0A628D0BA2B00EC6B66 /* fascts.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB24F0A528D0BA2B00EC6B66 /* fascts.txt */; };
+		FB24F0A828D0BA7400EC6B66 /* FasctsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB24F0A728D0BA7400EC6B66 /* FasctsRepository.swift */; };
+		FB24F0AB28D0BD4500EC6B66 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB24F0AA28D0BD4500EC6B66 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,11 @@
 		FB24F08A28D0A75E00EC6B66 /* FasctsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FasctsUITests.swift; sourceTree = "<group>"; };
 		FB24F08C28D0A75E00EC6B66 /* FasctsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FasctsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB24F09B28D0A80500EC6B66 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FB24F0A128D0AB4200EC6B66 /* Fasct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fasct.swift; sourceTree = "<group>"; };
+		FB24F0A328D0AC5600EC6B66 /* Fasct+Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fasct+Examples.swift"; sourceTree = "<group>"; };
+		FB24F0A528D0BA2B00EC6B66 /* fascts.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = fascts.txt; sourceTree = "<group>"; };
+		FB24F0A728D0BA7400EC6B66 /* FasctsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FasctsRepository.swift; sourceTree = "<group>"; };
+		FB24F0AA28D0BD4500EC6B66 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB24F09F28D0AABB00EC6B66 /* SwiftUIPager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,9 @@
 		FB24F05D28D0A75B00EC6B66 = {
 			isa = PBXGroup;
 			children = (
+				FB24F0A928D0BD3500EC6B66 /* Extensions */,
+				FB24F0A728D0BA7400EC6B66 /* FasctsRepository.swift */,
+				FB24F0A528D0BA2B00EC6B66 /* fascts.txt */,
 				FB24F06828D0A75B00EC6B66 /* Fascts */,
 				FB24F07F28D0A75E00EC6B66 /* FasctsTests */,
 				FB24F08928D0A75E00EC6B66 /* FasctsUITests */,
@@ -101,6 +116,7 @@
 		FB24F06828D0A75B00EC6B66 /* Fascts */ = {
 			isa = PBXGroup;
 			children = (
+				FB24F0A028D0AB3200EC6B66 /* Models */,
 				FB24F06928D0A75B00EC6B66 /* FasctsApp.swift */,
 				FB24F06B28D0A75B00EC6B66 /* Persistence.swift */,
 				FB24F07028D0A75B00EC6B66 /* ContentView.swift */,
@@ -138,6 +154,23 @@
 			path = FasctsUITests;
 			sourceTree = "<group>";
 		};
+		FB24F0A028D0AB3200EC6B66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB24F0A128D0AB4200EC6B66 /* Fasct.swift */,
+				FB24F0A328D0AC5600EC6B66 /* Fasct+Examples.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB24F0A928D0BD3500EC6B66 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB24F0AA28D0BD4500EC6B66 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +187,9 @@
 			dependencies = (
 			);
 			name = Fascts;
+			packageProductDependencies = (
+				FB24F09E28D0AABB00EC6B66 /* SwiftUIPager */,
+			);
 			productName = Fascts;
 			productReference = FB24F06628D0A75B00EC6B66 /* Fascts.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +262,9 @@
 				Base,
 			);
 			mainGroup = FB24F05D28D0A75B00EC6B66;
+			packageReferences = (
+				FB24F09D28D0AABB00EC6B66 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+			);
 			productRefGroup = FB24F06728D0A75B00EC6B66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -242,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB24F0A628D0BA2B00EC6B66 /* fascts.txt in Resources */,
 				FB24F07728D0A75E00EC6B66 /* Preview Assets.xcassets in Resources */,
 				FB24F07328D0A75E00EC6B66 /* Assets.xcassets in Resources */,
 			);
@@ -269,10 +309,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB24F06F28D0A75B00EC6B66 /* Fascts.xcdatamodeld in Sources */,
+				FB24F0AB28D0BD4500EC6B66 /* String+Extension.swift in Sources */,
+				FB24F0A228D0AB4200EC6B66 /* Fasct.swift in Sources */,
 				FB24F06A28D0A75B00EC6B66 /* FasctsApp.swift in Sources */,
 				FB24F07128D0A75B00EC6B66 /* ContentView.swift in Sources */,
 				FB24F09C28D0A80500EC6B66 /* HomeView.swift in Sources */,
+				FB24F0A828D0BA7400EC6B66 /* FasctsRepository.swift in Sources */,
 				FB24F06C28D0A75B00EC6B66 /* Persistence.swift in Sources */,
+				FB24F0A428D0AC5600EC6B66 /* Fasct+Examples.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +668,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB24F09D28D0AABB00EC6B66 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB24F09E28D0AABB00EC6B66 /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB24F09D28D0AABB00EC6B66 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FB24F06D28D0A75B00EC6B66 /* Fascts.xcdatamodeld */ = {
