@@ -35,7 +35,7 @@ final class DefaultFasctsRepository: FasctsRepository {
                 )
             }
         } catch {
-            fatalError("File 'fascts' was not opened!")
+            fatalError("File '\(filename)' was not opened!")
         }
     }
 }
