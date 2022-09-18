@@ -20,7 +20,7 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             Color.indigo
-                .opacity(0.6)
+                .opacity(0.5)
 
             Pager(page: page, data: fascts, id: \.id) { fasct in
                 ZStack {
@@ -44,21 +44,31 @@ struct HomeView: View {
 
     private func fasctView(for fasct: Fasct) -> some View {
         VStack {
-            Text(fasct.question)
-                .font(.title)
+            Text(fasct.question + "?")
+                .font(.title3)
                 .multilineTextAlignment(.center)
                 .padding()
 
+            Divider()
+
             Text(isAnswerShown ? fasct.answer : "-----")
-                .font(.title2)
+                .font(.headline)
                 .multilineTextAlignment(.center)
                 .padding()
+
+            Divider()
 
             Button(action: {
                 isAnswerShown.toggle()
             }, label: {
                 Text(isAnswerShown ? "Hide Answer" : "Show Answer")
             })
+            .foregroundColor(.cyan)
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color.indigo.opacity(0.7))
+            .cornerRadius(12)
+            .padding()
         }
     }
 }
