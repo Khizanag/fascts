@@ -38,7 +38,7 @@ struct HomeView: View {
         }
         .ignoresSafeArea()
         .onAppear {
-            fascts = repository.fascts().shuffled()
+            fascts = repository.fascts(categories: [.all]).shuffled()
         }
     }
 

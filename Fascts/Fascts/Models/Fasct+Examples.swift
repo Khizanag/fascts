@@ -18,14 +18,16 @@ extension Fasct {
             question: "რომელ წელს შეიქმნა 'Fascts'?",
             answer: "2022",
             authorId: authorId,
-            creationDate: .now
+            creationDate: .now,
+            category: .history
         ),
         Fasct(
             id: UUID(uuidString: "230d8dd0-335e-11ed-a261-0242ac120002")!,
             question: "რომელ წელს მოხდა დიდგორი ბრძოლა?",
             answer: "1121",
             authorId: authorId,
-            creationDate: .now
+            creationDate: .now,
+            category: .history
         )
     ]
 }
