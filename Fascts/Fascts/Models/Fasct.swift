@@ -13,6 +13,7 @@ struct Fasct {
     let answer: String
     let authorId: UUID?
     let creationDate: Date
+    let category: Category
 }
 
 extension Fasct: Equatable { }
