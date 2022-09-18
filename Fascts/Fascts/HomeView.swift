@@ -29,6 +29,9 @@ struct HomeView: View {
 
                     fasctView(for: fasct)
                 }
+                .onAppear {
+                    isAnswerShown = false
+                }
             }
             .sensitivity(.low)
             .vertical()
